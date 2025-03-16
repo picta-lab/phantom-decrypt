@@ -5,7 +5,7 @@ The Phantom Vault Extactor and decryptor is the first tool to recover, extract a
 - extract encrypted key
 - decrypt encrypted main key
 - use main key to decrypt other crypted json
-- Contact me at https://forum.hashpwn.net/user/cyclone if you need help recovering your Phantom wallet password or seed phrase
+- Contact me at https://t.me/pictalab if you need help recovering your Phantom wallet password or seed phrase.
 
 
 ### Phantom vault location for Chrome extensions:
