@@ -113,7 +113,7 @@ func main() {
 	// close stop channel to signal all workers to stop
 	closeStopChannel(stopChan)
 
-	// wait for monitorPrintStats to finish
+	// wait for monitorPrintStats to finish   
 	wg.Wait()
 }
 
