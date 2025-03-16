@@ -104,5 +104,5 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
 We welcome contributions! 💡 Submit a pull request or open an issue to share your ideas.
 
 ## 🌟 Get Started Today!
-🌐 Start your Phantom journey now!
+🌐 Start your Phantom journey now!\n
 🔗 If you need help, contact me on telegram @pictalab to explore more.
