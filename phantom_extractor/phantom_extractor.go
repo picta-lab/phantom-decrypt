@@ -54,7 +54,7 @@ func clearScreen() {
 
 // version func
 func versionFunc() {
-	fmt.Fprintln(os.Stderr, "Picata Lab's Phantom Vault Extractor v0.3.3-2025-03-04\nhttps://github.com/cyclone-github/phantom_pwn\n")
+	fmt.Fprintln(os.Stderr, "Picta Lab's Phantom Vault Extractor v0.3.3-2025-03-04\nhttps://github.com/picta-lab/phantom-decrypt\n")
 }
 
 // help func
@@ -82,7 +82,7 @@ func printWelcomeScreen() {
 	fmt.Println(" ----------------------------------------------------- ")
 	fmt.Println("|        Picta Lab's Phantom Vault Extractor          |")
 	fmt.Println("|        Use Phantom Vault Decryptor to decrypt       |")
-	fmt.Println("|    https://github.com/picata-lab/phantom-decrypt    |")
+	fmt.Println("|    https://github.com/picta-lab/phantom-decrypt    |")
 	fmt.Println(" ----------------------------------------------------- ")
 }
 
