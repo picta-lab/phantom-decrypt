@@ -17,9 +17,9 @@ The Phantom Vault Extactor and decryptor is the first tool to recover, extract a
 ```
 ./phantom_extractor.bin bfnaelmomeimhlpmgjnjophhpkkoljpa/
  ----------------------------------------------------- 
-|        Cyclone's Phantom Vault Hash Extractor       |
+|       Picta Lab's Phantom Vault Hash Extractor      |
 |        Use Phantom Vault Decryptor to decrypt       |
-|    https://github.com/cyclone-github/phantom_pwn    |
+|    https://github.com/picta-lab/phantom-decrypt     |
  ----------------------------------------------------- 
 {"encryptedKey":{"digest":"sha256","encrypted":"5pLvA3bCjNGYBbSjjFY3mdPknwFfp3cz9dCBv6izyyrqEhYCBkKwo3zZUzBP44KtY3","iterations":10000,"kdf":"pbkdf2","nonce":"NZT6kw5Cd5VeZu5yJGJcFcP24tnmg4xsR","salt":"A43vTZnm9c5CiQ6FLTdV9v"},"version":1}
  ----------------------------------------------------- 
@@ -35,9 +35,9 @@ PHANTOM:10000:SU9HoVMjb1ieOEv18nz3FQ==:7H29InVRWVbHS4WcBJdTay0ONb4mLX9Q:g0vJAbfl
 ```
 ./phantom_extractor.bin bfnaelmomeimhlpmgjnjophhpkkoljpa/
  ----------------------------------------------------- 
-|        Cyclone's Phantom Vault Hash Extractor       |
+|        Picata-lab's Phantom Vault Hash Extractor    |
 |        Use Phantom Vault Decryptor to decrypt       |
-|    https://github.com/cyclone-github/phantom_pwn    |
+|    https://github.com/picta-lab/phantom-decrypt     |
  ----------------------------------------------------- 
 {"encryptedKey":{"digest":"sha256","encrypted":"37fJoKsB9vwnKEzPgc2AHtYVsPTTzrXdTGacbgWxLxbiS7Ri3P3iNnf8csaKwJ4wpk","iterations":10000,"kdf":"scrypt","nonce":"49aomus4HiKLyg7F66pSinR4tpuUuJDHX","salt":"M1PMFn4p4gdCxZDzf8qX71"},"version":1}
  ----------------------------------------------------- 
@@ -49,8 +49,8 @@ PHANTOM:4096:8:1:ogSL4J4xP/wNbAjiA8Q4hA==:Iofs3VYyyaYFzHVkcMsnpkrjGQ2+Kni2:OacHa
 ### Decryptor usage example:
 ```
  ----------------------------------------------- 
-|       Cyclone's Phantom Vault Decryptor       |
-| https://github.com/cyclone-github/phantom_pwn |
+|       Picta-lab Phantom Vault Decryptor       |
+| https://github.com/picta-lab/phantom-decrypt  |
  ----------------------------------------------- 
 
 Vault file:     hash.txt
@@ -88,7 +88,7 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
 
 ### Compile from source:
 - This assumes you have Go and Git installed
-  - `git clone https://github.com/picta-lab/phantom_decrypt.git`
+  - `git clone https://github.com/picta-lab/phantom-decrypt.git`
   - phantom_extractor
   - `cd phantom-decrypt/phantom_extractor`
   - `go mod tidy`
@@ -98,4 +98,4 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
   - `go mod tidy`
   - `go build -ldflags="-s -w" .`
 - Compile from source code how-to:
-  - https://github.com/picata-lab/scripts/blob/main/intro_to_go.txt
+  - https://github.com/picta-lab/scripts/blob/main/intro_to_go.txt

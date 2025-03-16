@@ -8,7 +8,7 @@ import (
 
 // version func
 func versionFunc() {
-	fmt.Fprintln(os.Stderr, "Cyclone's Phantom Vault Decryptor v0.1.5-2024-11-30-1415\nhttps://github.com/cyclone-github/phantom_pwn\n")
+	fmt.Fprintln(os.Stderr, "Picta Lab's Phantom Vault Decryptor v0.1.5-2025-03-16-1415\nhttps://github.com/picta-lab/phantom-decrypt\n")
 }
 
 // help func
@@ -38,8 +38,8 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
 // print welcome screen
 func printWelcomeScreen(vaultFileFlag, wordlistFileFlag *string, validVaultCount, numThreads int) {
 	fmt.Fprintln(os.Stderr, " ----------------------------------------------- ")
-	fmt.Fprintln(os.Stderr, "|       Cyclone's Phantom Vault Decryptor       |")
-	fmt.Fprintln(os.Stderr, "| https://github.com/cyclone-github/phantom_pwn |")
+	fmt.Fprintln(os.Stderr, "|       Picta Lab's Phantom Vault Decryptor     |")
+	fmt.Fprintln(os.Stderr, "| https://github.com/picta-lab/phantom-decrypt  |")
 	fmt.Fprintln(os.Stderr, " ----------------------------------------------- ")
 	fmt.Fprintln(os.Stderr)
 	fmt.Fprintf(os.Stderr, "Vault file:\t%s\n", *vaultFileFlag)

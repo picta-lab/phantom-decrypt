@@ -14,7 +14,7 @@ import (
 Picta Lab Phantom Vault Decryptor
 
 
-https://github.com/picta-lab/phantom_decrypt
+https://github.com/picta-lab/phantom-decrypt
 
 POC tool to decrypt Phantom Vault wallets
 This tool is proudly the first Phantom Vault Decryptor / Cracker
@@ -22,23 +22,23 @@ coded by picta-lab in Go
 
 
 GNU General Public License v2.0
-https://github.com/picta-lab/phantom_decrypt/blob/main/LICENSE
+https://github.com/picta-lab/phantom-decrypt/blob/master/LICENSE
 
 version history
 v0.1.0-2025-01-20-2000; initial release
 v0.1.1-2025-01-22-1600;
 	refactor code
-	fixed https://github.com/picta-lab/phantom_decrypt/issues/1
+	fixed https://github.com/picta-lab/phantom-decrypt/issues/1
 v0.1.2-2025-01-31-1700;
-	acknowledged https://github.com/picta-lab/phantom_decrypt/issues/3
+	acknowledged https://github.com/picta-lab/phantom-decrypt/issues/3
 	added placeholder for scrypt KDF
 v0.1.3-2025-07-02-1100;
 	added support for scrypt KDF
-	fixed https://github.com/picta-lab/phantom_decrypt/issues/3
+	fixed https://github.com/picta-lab/phantom-decrypt/issues/3
 v0.1.4-2025-02-15-1630;
 	finished implementing flag -o {output file}
 v0.1.5-2025-03-01-1415;
-	fix https://github.com/picta-lab/phantom_decrypt/issues/6
+	fix https://github.com/picta-lab/phantom-decrypt/issues/6
 	swapped crackedCount and lineProcessed channels for atomic int32 for better performance
 	multiple performance optimizations in process.go
 	print vault:password when vault is cracked
