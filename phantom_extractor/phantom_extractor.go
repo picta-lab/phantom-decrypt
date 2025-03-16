@@ -54,7 +54,7 @@ func clearScreen() {
 
 // version func
 func versionFunc() {
-	fmt.Fprintln(os.Stderr, "Cyclone's Phantom Vault Extractor v0.3.3-2025-02-04\nhttps://github.com/cyclone-github/phantom_pwn\n")
+	fmt.Fprintln(os.Stderr, "Picata Lab's Phantom Vault Extractor v0.3.3-2025-03-04\nhttps://github.com/cyclone-github/phantom_pwn\n")
 }
 
 // help func
@@ -80,9 +80,9 @@ C:\Users\$USER\AppData\Local\Google\Chrome\User Data\Default\Local Extension Set
 // print welcome screen
 func printWelcomeScreen() {
 	fmt.Println(" ----------------------------------------------------- ")
-	fmt.Println("|        PictaLab's Phantom Vault Extractor           |")
+	fmt.Println("|        Picta Lab's Phantom Vault Extractor          |")
 	fmt.Println("|        Use Phantom Vault Decryptor to decrypt       |")
-	fmt.Println("|    https://github.com/picata-lab/phantom_decrypt    |")
+	fmt.Println("|    https://github.com/picata-lab/phantom-decrypt    |")
 	fmt.Println(" ----------------------------------------------------- ")
 }
 
@@ -184,15 +184,7 @@ func detectVersion(data []byte) int {
 	return -1 // unknown version
 }
 
-// vault version detection
-func detectOtherJson(data []byte) int {
-	if strings.Contains(string(data), "\"content\":") {
-		return 1
-	}
-	
-	return 0 // unknown version
-	
-}
+
 
 func dumpRawLDBFiles(dirPath string) error {
 	return filepath.Walk(dirPath, func(path string, info os.FileInfo, err error) error {
