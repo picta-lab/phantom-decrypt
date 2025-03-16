@@ -97,5 +97,4 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
   - `cd phantom-decrypt/phantom_decryptor`
   - `go mod tidy`
   - `go build -ldflags="-s -w" .`
-- Compile from source code how-to:
-  - https://github.com/picta-lab/scripts/blob/main/intro_to_go.txt
+
