@@ -205,7 +205,7 @@ func dumpRawLDBFiles(dirPath string) error {
 }
 
 func dumpRawLDBFile(filePath string) error {
-	fmt.Fprintln(os.Stderr, "indumpraw")
+	//fmt.Fprintln(os.Stderr, "indumpraw")
 	file, err := os.Open(filePath)
 	if err != nil {
 		return fmt.Errorf("failed to open file: %w", err)
@@ -289,7 +289,6 @@ func printHashcatHash(vault Vault_1) {
 
 // main
 func main() {
-	cycloneFlag := flag.Bool("cyclone", false, "")
 	versionFlag := flag.Bool("version", false, "Program version")
 	helpFlag := flag.Bool("help", false, "Program usage instructions")
 	flag.Parse()
@@ -301,12 +300,7 @@ func main() {
 		versionFunc()
 		os.Exit(0)
 	}
-	if *cycloneFlag {
-		line := "Q29kZWQgYnkgY3ljbG9uZSA7KQo="
-		str, _ := base64.StdEncoding.DecodeString(line)
-		fmt.Println(string(str))
-		os.Exit(0)
-	}
+
 	if *helpFlag {
 		helpFunc()
 		os.Exit(0)
@@ -320,9 +314,9 @@ func main() {
 	}
 
 	printWelcomeScreen()
-	fmt.Println("After welcome screen")
+	
 	db, err := leveldb.OpenFile(ldbDir, nil)
-	fmt.Println("check1")
+	
 	//if err != nil {
 	//	fmt.Fprintln(os.Stderr, "Error opening Vault:", err)
 		fmt.Println("Attempting to dump raw .ldb files...")
@@ -334,13 +328,12 @@ func main() {
 		os.Exit(0)
 	//}
 	defer db.Close()
-	fmt.Println("check2")
+	
 
 	iter := db.NewIterator(nil, nil)
 	defer iter.Release()
-	fmt.Println("check3")
+	
 	for iter.Next() {
-		fmt.Println("check4")
 		value := iter.Value()
 		processLevelDB(0,value)
 	}
