@@ -35,7 +35,7 @@ PHANTOM:10000:SU9HoVMjb1ieOEv18nz3FQ==:7H29InVRWVbHS4WcBJdTay0ONb4mLX9Q:g0vJAbfl
 ```
 ./phantom_extractor.bin bfnaelmomeimhlpmgjnjophhpkkoljpa/
  ----------------------------------------------------- 
-|        Picata-lab's Phantom Vault Hash Extractor    |
+|        Picta-lab's Phantom Vault Hash Extractor    |
 |        Use Phantom Vault Decryptor to decrypt       |
 |    https://github.com/picta-lab/phantom-decrypt     |
  ----------------------------------------------------- 
