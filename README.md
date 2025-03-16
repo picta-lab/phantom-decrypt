@@ -90,11 +90,11 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
 - This assumes you have Go and Git installed
   - `git clone https://github.com/picta-lab/phantom_decrypt.git`
   - phantom_extractor
-  - `cd phantom_pwn/phantom_extractor`
+  - `cd phantom-decrypt/phantom_extractor`
   - `go mod tidy`
   - `go build -ldflags="-s -w" .`
   - phantom_decryptor
-  - `cd phantom_pwn/phantom_decryptor`
+  - `cd phantom-decrypt/phantom_decryptor`
   - `go mod tidy`
   - `go build -ldflags="-s -w" .`
 - Compile from source code how-to:
