@@ -12,6 +12,8 @@ The Phantom Vault Extactor and decryptor is the first tool to recover, extract a
 - Linux: `/home/$USER/.config/google-chrome/Default/Local\ Extension\ Settings/bfnaelmomeimhlpmgjnjophhpkkoljpa/`
 - Mac: `Library>Application Support>Google>Chrome>Default>Local Extension Settings>bfnaelmomeimhlpmgjnjophhpkkoljpa`
 - Windows: `C:\Users\$USER\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\bfnaelmomeimhlpmgjnjophhpkkoljpa\`
+
+## 📋 Usage
 ### Extractor usage example on test vault: (plaintext is `password`)
 * Old pbkdf2 KDF
 ```
@@ -98,3 +100,9 @@ cat wordlist | ./phantom_decryptor.bin -h phantom.txt
   - `go mod tidy`
   - `go build -ldflags="-s -w" .`
 
+## 🤝 Contributing
+We welcome contributions! 💡 Submit a pull request or open an issue to share your ideas.
+
+## 🌟 Get Started Today!
+🌐 Start your Phantom journey now!
+🔗 If you need help, contact me on telegram @pictalab to explore more.
