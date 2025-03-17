@@ -17,7 +17,7 @@ The Phantom Vault Extactor and decryptor is the first tool to recover, extract a
 ### Extractor usage example on test vault: (plaintext is `password`)
 * Old pbkdf2 KDF
 ```
-./phantom_extractor.bin bfnaelmomeimhlpmgjnjophhpkkoljpa/
+phantom_extractor.exe bfnaelmomeimhlpmgjnjophhpkkoljpa/
  ----------------------------------------------------- 
 |       Picta Lab's Phantom Vault Hash Extractor      |
 |        Use Phantom Vault Decryptor to decrypt       |
@@ -35,7 +35,7 @@ PHANTOM:10000:SU9HoVMjb1ieOEv18nz3FQ==:7H29InVRWVbHS4WcBJdTay0ONb4mLX9Q:g0vJAbfl
 ```
 * New scrypt KDF
 ```
-./phantom_extractor.bin bfnaelmomeimhlpmgjnjophhpkkoljpa/
+phantom_extractor.exe bfnaelmomeimhlpmgjnjophhpkkoljpa/
  ----------------------------------------------------- 
 |        Picta-lab's Phantom Vault Hash Extractor    |
 |        Use Phantom Vault Decryptor to decrypt       |
@@ -48,6 +48,7 @@ PHANTOM:10000:SU9HoVMjb1ieOEv18nz3FQ==:7H29InVRWVbHS4WcBJdTay0ONb4mLX9Q:g0vJAbfl
 PHANTOM:4096:8:1:ogSL4J4xP/wNbAjiA8Q4hA==:Iofs3VYyyaYFzHVkcMsnpkrjGQ2+Kni2:OacHaTJAM8dD7XJIj5bGMU3cM8QW3u92n+ngYjXsgRSR20FDnkMLQHTgPxJDefOx
 
 ```
+It outputs file HASH.txt in current directory, with the extracted hash
 ### Decryptor usage example:
 ```
  ----------------------------------------------- 
@@ -77,13 +78,11 @@ Wordlist:       wordlist.txt
 -version (version info)
 -help (usage instructions)
 
-./phantom_decryptor.bin -h {phantom_wallet_hash} -w {wordlist} -o {output} -t {cpu threads} -s {print status every nth sec}
+phantom_decryptor.exe -h {phantom_wallet_hash} -w {wordlist} -o {output} -t {cpu threads} -s {print status every nth sec}
 
-./phantom_decryptor.bin -h phantom.txt -w wordlist.txt -o cracked.txt -t 16 -s 10
+phantom_decryptor.exe -h phantom.txt -w wordlist.txt -o cracked.txt -t 16 -s 10
 
-cat wordlist | ./phantom_decryptor.bin -h phantom.txt
-
-./phantom_decryptor.bin -h phantom.txt -w wordlist.txt -o output.txt
+phantom_decryptor.exe -h phantom.txt -w wordlist.txt -o output.txt
 ```
 
 ## 🛠 Installation
