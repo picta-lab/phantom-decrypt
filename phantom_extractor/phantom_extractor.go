@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"strings"
 	"unicode"
-	"strconv"
+	
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/opt"
@@ -111,8 +111,8 @@ type Vault_1 struct {
 // processLevelDB with version handling
 func processLevelDB(i int,data []byte) {
 	// detect vault version
-	s2 := strconv.Itoa(i)
-	str := string(data)
+	//s2 := strconv.Itoa(i)
+	//str := string(data)
     //fmt.Println(str)
 	
 
@@ -147,7 +147,7 @@ func processLevelDB(i int,data []byte) {
 		//fmt.Println("default")
 		}
 	}
-}
+
 
 // print valid JSON vaults
 func printJSONVaultandSave(entry Vault_1) {
